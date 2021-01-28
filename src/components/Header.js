@@ -5,13 +5,13 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className="header">
-      <div className="headerLogo">
-        <Link to={"/"}>
-          <img src={Logo} alt="Tesla Logo" />
-        </Link>
-      </div>
-      <Router>
+    <Router>
+      <div className="header">
+        <div className="headerLogo">
+          <Link to={"/"}>
+            <img src={Logo} alt="Tesla Logo" />
+          </Link>
+        </div>
         <div className="headerCenter">
           <Link to={"/models"} className="headerText">
             Model S
@@ -42,30 +42,16 @@ function Header() {
           <div className="menuIcon">{/* <MenuIcon /> */}</div>
         </div>
         <Switch>
-          <Route path="/">
-            {/* <App /> */}
-          </Route>
-          <Route path="/models">
-            {/* <Models /> */}
-          </Route>
-          <Route path="/models3">
-            {/* <Models3 /> */}
-          </Route>
-          <Route path="/modelx">
-            {/* <Modelsx /> */}
-          </Route>
-          <Route path="/modely">
-            {/* <Modely /> */}
-          </Route>
-          <Route path="/solarroof">
-            {/* <Solarroof /> */}
-          </Route>
-          <Route path="/solarpanels">
-            {/* <Solarpanels /> */}
-          </Route>
+          <Route path="/">{/* <App /> */}</Route>
+          <Route path="/models">{/* <Models /> */}</Route>
+          <Route path="/models3">{/* <Models3 /> */}</Route>
+          <Route path="/modelx">{/* <Modelsx /> */}</Route>
+          <Route path="/modely">{/* <Modely /> */}</Route>
+          <Route path="/solarroof">{/* <Solarroof /> */}</Route>
+          <Route path="/solarpanels">{/* <Solarpanels /> */}</Route>
         </Switch>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 
