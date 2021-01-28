@@ -1,13 +1,16 @@
 import React from "react";
 import "./Item.css";
-function Item() {
+function Item({
+  title,
+  desc
+}) {
   return (
     <div className="item" style={{}}>
       <div className="itemContainer">
         <div className="itemTitle">
-          <p>title</p>
+          <p>{title}</p>
           <div className="itemDescription">
-            <p>description</p>
+            <p>{desc}</p>
           </div>
         </div>
         <div className="itemLowerThird">
