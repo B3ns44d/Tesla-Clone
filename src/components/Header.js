@@ -1,7 +1,8 @@
 import React from "react";
 import "./Header.css";
-import Logo from "../assets/teslaLogoSmall.svg";
+import Logo from "../assets/teslaLogo.svg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import MenuIcon from "@material-ui/icons/Menu";
 
 function Header() {
   return (
@@ -39,7 +40,7 @@ function Header() {
           <Link to={"/teslaaccount"} className="headerText">
             Tesla Account
           </Link>
-          <div className="menuIcon">{/* <MenuIcon /> */}</div>
+          <div className="menuIcon"><MenuIcon /></div>
         </div>
         <Switch>
           <Route path="/">{/* <App /> */}</Route>
