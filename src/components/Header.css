@@ -5,9 +5,10 @@
   position: fixed;
   width: 100vw;
   top: 0px;
-  margin: 15px;
-  margin-top: 15px;
+  margin: 0;
+  padding: 0;
   z-index: 100;
+  font-weight: normal;
 }
 
 .headerLogo {
@@ -15,7 +16,6 @@
   width: 100px;
   margin-top: 7px;
 }
-
 .headerCenter {
   flex: 1;
   display: flex;
@@ -23,8 +23,10 @@
 }
 
 .headerCenter > .headerText {
+  color: #171a20;
   margin: 10px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .headerRight {
@@ -35,6 +37,14 @@
 }
 
 .headerRight > .headerText {
+  color: #171a20;
   margin: 10px;
+  text-decoration: none;
 }
 
+.menuIcon {
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
