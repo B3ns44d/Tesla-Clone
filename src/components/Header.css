@@ -14,12 +14,13 @@
 .headerLogo {
   height: 24px;
   width: 100px;
-  margin-top: 7px;
+  margin: 10px;
 }
 .headerCenter {
   flex: 1;
   display: flex;
   justify-content: center;
+  margin: 10px;
 }
 
 .headerCenter > .headerText {
@@ -27,6 +28,7 @@
   margin: 10px;
   text-transform: uppercase;
   text-decoration: none;
+
 }
 
 .headerRight {
@@ -34,12 +36,14 @@
   justify-content: flex-end;
   text-transform: uppercase;
   padding-right: 10px;
+  margin: 10px;
 }
 
 .headerRight > .headerText {
   color: #171a20;
   margin: 10px;
   text-decoration: none;
+  margin: 10px;
 }
 
 .menuIcon {
@@ -47,4 +51,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
