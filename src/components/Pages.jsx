@@ -27,7 +27,7 @@ function Pages() {
       />
       <Item
         title="Model Y"
-        desc="Order Online for Touchless Delivery "
+        desc="Order Online for Touchless Delivery"
         descLink=""
         backgroundImg={ModelY}
         leftBtnTxt="Custom Order"
